@@ -1,0 +1,88 @@
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-container {
+    max-width: 650px;
+    margin: 60px auto;
+    padding: 45px;
+    background: linear-gradient(to right, #0b0c10, #101419);
+    border-radius: 16px;
+    box-shadow: 0 0 25px rgba(0, 174, 255, 0.2);
+}
+
+.contact-container h2 {
+    text-align: center;
+    margin-bottom: 35px;
+    color: #00aaff;
+    font-size: 32px;
+    letter-spacing: 1px;
+}
+
+.contact-form .form-group {
+    margin-bottom: 22px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-bottom: 8px;
+    color: #aaa;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 14px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    outline: none;
+    font-size: 16px;
+    background-color: #1a1a1a;
+    color: #fff;
+    transition: 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #00aaff;
+    box-shadow: 0 0 10px rgba(0, 174, 255, 0.4);
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    font-size: 17px;
+    font-weight: bold;
+    background: linear-gradient(to right, #007fff, #00aaff);
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.4s ease;
+    box-shadow: 0 0 15px rgba(0, 174, 255, 0.3);
+}
+
+.submit-btn:hover {
+    background: linear-gradient(to right, #00aaff, #007fff);
+    transform: scale(1.03);
+    box-shadow: 0 0 20px rgba(0, 174, 255, 0.5);
+}
+
+/* Responsive */
+@media (max-width: 650px) {
+    .contact-container {
+        padding: 30px 20px;
+        margin: 20px;
+    }
+
+    .submit-btn {
+        font-size: 16px;
+        padding: 13px;
+    }
+}
